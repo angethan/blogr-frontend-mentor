@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
+- Solution URL: [Github]((https://github.com/angethan/blogr-frontend-mentor)
 - Live Site URL: [Netlify](https://blogr-angethan.netlify.app)
 
 ## My process
