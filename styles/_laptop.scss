@@ -1,0 +1,27 @@
+.laptop {
+  padding: 150px 0;
+  overflow: hidden;
+
+  .laptop__row {
+    @include grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .laptop__row-col {
+      @include flex-column;
+      justify-content: center;
+      gap: 70px;
+
+      h4 {
+        margin-bottom: 30px;
+      }
+    }
+
+    picture {
+      img {
+        display: block;
+        width: 100%;
+        transform: translateX(-50%) scale(1.3);
+      }
+    }
+  }
+}

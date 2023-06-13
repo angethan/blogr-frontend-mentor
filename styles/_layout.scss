@@ -1,0 +1,47 @@
+$containerXL: 1140px;
+$containerLG: 960px;
+$containerMD: 720px;
+$containerSM: 540px;
+$containerXS: 90%;
+
+section,
+footer {
+  width: 100%;
+  position: relative;
+}
+
+nav,
+.mobile-dropdown,
+.container {
+  width: $containerXL;
+  margin: 0 auto;
+}
+
+//FLEXBOX
+@mixin flex-row-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+//GRID
+@mixin grid {
+  display: grid;
+}

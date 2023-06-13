@@ -1,0 +1,91 @@
+@import "typography";
+@import "colors";
+@import "layout";
+@import "header";
+@import "hero";
+@import "future";
+@import "art";
+@import "laptop";
+@import "footer";
+@import "breakpoints";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  background-color: $white;
+}
+
+p {
+  color: $veryDarkGrayishBlue;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@mixin button-hover {
+  background-color: $veryLightRed;
+  color: $white;
+  border: 1px solid transparent;
+}
+
+.primary-button {
+  background-color: $white;
+  color: $lightRed;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  padding: 15px 25px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  transition-duration: 0.4s;
+
+  &:hover {
+    @include button-hover;
+  }
+}
+
+.secondary-button {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  color: $white;
+  padding: 15px 25px;
+  border: 1px solid $white;
+  border-radius: 30px;
+  transition-duration: 0.4s;
+
+  &:hover {
+    @include button-hover;
+  }
+}
+
+.mobile-button {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  background: linear-gradient(
+    90deg,
+    $veryLightRedGradient 0%,
+    $lightRedGradient 100%
+  );
+  color: $white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  transition-duration: 0.4s;
+}

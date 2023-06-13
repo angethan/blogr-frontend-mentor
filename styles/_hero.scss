@@ -1,0 +1,21 @@
+.hero {
+  padding: 200px 0;
+  background: url(../images/bg-pattern-intro-desktop.svg),
+    linear-gradient(90deg, $veryLightRedGradient 0%, $lightRedGradient 100%);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center left;
+  overflow: hidden;
+  border-radius: 0 0 0 200px;
+
+  h1,
+  p {
+    color: $white;
+    margin-bottom: 40px;
+  }
+
+  .hero__button-group {
+    @include flex-row-center;
+    gap: 20px;
+  }
+}

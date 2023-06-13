@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+$h1: clamp(2.4375rem, 1.2142rem + 3.3981vw, 4.1875rem);
+$h2: clamp(2.0625rem, 1.3198rem + 2.0631vw, 3.125rem);
+$h3: clamp(1.6875rem, 1.2506rem + 1.2136vw, 2.3125rem);
+$h4: clamp(1.4375rem, 1.2191rem + 0.6068vw, 1.75rem);
+$h5: clamp(1.1875rem, 1.1001rem + 0.2427vw, 1.3125rem);
+$h6: 16px;
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: $h1;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+h4 {
+  font-size: $h4;
+}
+
+h5 {
+  font-size: $h5;
+}
+
+h6 {
+  font-size: $h6;
+}
+
+p {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  font-family: "Ubuntu", sans-serif;
+}

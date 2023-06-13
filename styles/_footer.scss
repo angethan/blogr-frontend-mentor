@@ -1,0 +1,45 @@
+footer {
+  background-color: $veryDarkBlueFooter;
+  padding: 80px;
+  border-radius: 0 150px 0 0;
+
+  .footer__row {
+    @include grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 70px;
+
+    h5 {
+      margin-bottom: 40px;
+      color: $white;
+    }
+
+    li {
+      margin-bottom: 20px;
+
+      a {
+        color: $grayishBlue;
+        border-bottom: 1px solid transparent;
+        transition-duration: 0.4s;
+
+        &:hover {
+          border-bottom: 1px solid $white;
+        }
+      }
+    }
+  }
+
+  .footer__attribution {
+    p {
+      color: $grayishBlue;
+
+      a {
+        color: $veryLightRed;
+        transition-duration: 0.4s;
+
+        &hover {
+          color: $lightRed;
+        }
+      }
+    }
+  }
+}

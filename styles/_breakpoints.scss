@@ -1,0 +1,150 @@
+//1200px
+@media (max-width: 1200px) {
+  nav,
+  .container {
+    width: $containerLG;
+  }
+
+  .future {
+    .future__row {
+      picture {
+        img {
+          transform: translateX(0) scale(1);
+        }
+      }
+    }
+  }
+}
+
+//992px
+@media (max-width: 992px) {
+  nav,
+  .mobile-dropdown,
+  .container {
+    width: $containerMD;
+  }
+
+  header {
+    .desktop-nav {
+      display: none;
+    }
+
+    .mobile-nav {
+      @include flex-row-between;
+    }
+  }
+
+  .hero {
+    background: url(../images/bg-pattern-intro-mobile.svg),
+      linear-gradient(180deg, $veryLightRedGradient 0%, $lightRedGradient 100%);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .future {
+    padding: 100px 0;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    .future__row {
+      grid-template-columns: 1fr;
+      gap: 40px;
+
+      picture {
+        grid-row-start: 1;
+      }
+
+      h4,
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .art {
+    background-position: bottom;
+    background-size: contain;
+    padding-bottom: 100px;
+    margin-top: 200px;
+
+    .art__row {
+      grid-template-columns: 1fr;
+      gap: 0;
+
+      img {
+        margin: -200px 0 0 0;
+      }
+
+      h2,
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .laptop {
+    padding: 100px 0;
+
+    .laptop__row {
+      grid-template-columns: 1fr;
+      gap: 40px;
+
+      picture {
+        img {
+          transform: translateX(0) scale(1);
+        }
+      }
+
+      h4,
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+//768px
+@media (max-width: 768px) {
+  nav,
+  .mobile-dropdown,
+  .container {
+    width: $containerSM;
+  }
+
+  .footer {
+    padding: 100px;
+
+    .footer__row {
+      grid-template-columns: 1fr;
+      grid-gap: 40px;
+
+      .footer__row-col {
+        @include flex-column;
+        align-items: center;
+
+        h5 {
+          text-align: center;
+        }
+      }
+
+      li {
+        a {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+//576px
+@media (max-width: 576px) {
+  nav,
+  .mobile-dropdown,
+  .container {
+    width: $containerXS;
+  }
+}

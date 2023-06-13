@@ -1,0 +1,27 @@
+//PRIMARY
+$lightRed: hsl(356, 100%, 66%); //CTA Text
+$veryLightRed: hsl(355, 100%, 74%); //CTA hover background
+$veryDarkBlue: hsl(208, 49%, 24%); //Headings
+
+//NEUTRAL
+$white: hsl(0, 0%, 100%);
+$grayishBlue: hsl(240, 2%, 79%); //Footer Text
+$veryDarkGrayishBlue: hsl(207, 13%, 34%); //Body Copy
+$veryDarkBlueFooter: hsl(240, 10%, 16%); //Footer Background
+
+//GRADIENT
+//Background gradient - Intro/CTA mobile nav:
+$veryLightRedGradient: hsl(13, 100%, 72%);
+$lightRedGradient: hsl(353, 100%, 62%);
+
+//Background gradient - body:
+$veryDarkGrayBlueGradient: hsl(237, 17%, 21%);
+$veryDarkDesaturatedBlue: hsl(237, 23%, 32%);
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $veryDarkBlue;
+}
